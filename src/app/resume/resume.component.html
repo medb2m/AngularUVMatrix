@@ -1,1 +1,210 @@
-<p>resume works!</p>
+<div class="container text-center">
+    <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">Download PDF Resume</button>
+
+    <div class="pb-2">
+        <accordion [isAnimated]="true" class="shadow">
+            <accordion-group [(isOpen)]="isWorkExperienceOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">
+                        Work Experience
+                    </div>
+                    <div style="width: 10.95;">
+                        <div *ngIf="!isWorkExperienceOpen" style="color : grey;">></div>
+                        <div *ngIf="isWorkExperienceOpen" style="color : grey;">v</div>
+                    </div>
+                    
+                </button>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">IT Support (Part Time)</h2>
+                    <h3 class="text-primary">Recruitment Agency</h3>
+                    <ul>
+                        <li>From 2022 to Present</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, nihil optio illum voluptatibus fuga magnam?</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, sit.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, sit.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, sit.</li>
+                    </ul>
+                    <hr>
+                    <h2 class="mb-0">Fullstack Developer Internship</h2>
+                    <h3 class="text-primary">SNT : Consulting</h3>
+                    <ul>
+                        <li>in 2022</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, nihil optio illum voluptatibus fuga magnam?</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, sit.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, sit.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, sit.</li>
+                    </ul>
+                    <hr>
+                    <h2 class="mb-0">IT Support Internship</h2>
+                    <h3 class="text-primary">Avenir Formation</h3>
+                    <ul>
+                        <li>In 2021</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, nihil optio illum voluptatibus fuga magnam?</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, sit.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, sit.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, sit.</li>
+                    </ul>
+                </div>
+            </accordion-group>
+            <accordion-group [(isOpen)]="isEducationOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">
+                        Education
+                    </div>
+                    <div style="width: 10.95;">
+                        <div *ngIf="!isEducationOpen" style="color : grey;">></div>
+                        <div *ngIf="isEducationOpen" style="color : grey;">v</div>
+                    </div>
+                </button>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">engineering's Degree in Software engineer</h2>
+                    <h3 class="text-primary">Esprit(The Private Higher School of Engineering and Technology)</h3>
+                    <ul>
+                        <li>
+                            I am a second-year student at ESPRIT Engineering School, currently attending evening classes.
+                        </li>
+                    </ul>
+                    <hr>
+                    <h2 class="mb-0">Bachelor's Degree in Software engineer</h2>
+                    <h3 class="text-primary">Université Centrale</h3>
+                    <ul>
+                        <li>
+                            graduated from Université Centrale in 2022
+                        </li>
+                        <li>
+                            Graduated with a 3.8 GPA
+                        </li>
+                    </ul>
+                </div>
+            </accordion-group>
+            <accordion-group [(isOpen)]="isCertificateOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">
+                        Certifications
+                    </div>
+                    <div style="width: 10.95;">
+                        <div *ngIf="!isCertificateOpen" style="color : grey;">></div>
+                        <div *ngIf="isCertificateOpen" style="color : grey;">v</div>
+                    </div>
+                </button>
+                <div style="text-align: left;">
+                    <h3 class="text-primary">Angular Basics</h3>
+                    <ul>
+                        <li>
+                            Obtained April 2024
+                        </li>
+                        <li>
+                            Certificate ID
+                        </li>
+                    </ul>
+                    <hr>
+                    <h3 class="text-primary">Technical Support Fundamentals</h3>
+                    <ul>
+                        <li>
+                            Obtained April 2024
+                        </li>
+                        <li>
+                            Certificate ID
+                        </li>
+                    </ul>
+                    <hr>
+                    <h3 class="text-primary">Modern Javascript ES6</h3>
+                    <ul>
+                        <li>
+                            Obtained March 2024
+                        </li>
+                        <li>
+                            Certificate ID
+                        </li>
+                    </ul>
+                </div>
+            </accordion-group>
+            <accordion-group [(isOpen)]="isSkillsOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">
+                        Skills
+                    </div>
+                    <div style="width: 10.95;">
+                        <div *ngIf="!isSkillsOpen" style="color : grey;">></div>
+                        <div *ngIf="isSkillsOpen" style="color : grey;">v</div>
+                    </div>
+                </button>
+                <div class="row" style="text-align: left;">
+                    <div class="col">
+                        <h3>Programming Languages</h3>
+                        <ul>
+                            <li>
+                                C / C++ / C#
+                            </li>
+                            <li>
+                                Typescript
+                            </li>
+                            <li>
+                                Javascript
+                            </li>
+                            <li>
+                                Python
+                            </li>
+                            <li>
+                                Java
+                            </li>
+                            <li>
+                                PHP
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Frameworks</h3>
+                        <ul>
+                            <li>
+                                Angular
+                            </li>
+                            <li>
+                                React
+                            </li>
+                            <li>
+                                ASP.NET
+                            </li>
+                            <li>
+                                Python
+                            </li>
+                            <li>
+                                SpringBoot
+                            </li>
+                            <li>
+                                NodeJS
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Other Skills</h3>
+                        <ul>
+                            <li>
+                                Source control via Git
+                            </li>
+                            <li>
+                                MVC Architecture
+                            </li>
+                            <li>
+                                Agile Development
+                            </li>
+                            <li>
+                                Python
+                            </li>
+                            <li>
+                                Java
+                            </li>
+                            <li>
+                                PHP
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </accordion-group>
+        </accordion>
+    </div>
+</div>
